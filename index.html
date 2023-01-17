@@ -57,11 +57,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <script>
-  gsap.to('#triangle1', { rotate: 50, duration: 1, fill: '#a8f731', transformOrigin: 'center center' });
-  gsap.to('#triangle2', { rotate: 70, duration: 1, fill: '#31f7d9', transformOrigin: 'center center' });
-  gsap.to('#triangle3', { rotate: 100, duration: 1, transformOrigin: 'center center' });
+  gsap.to('#triangle1', { rotate: 50, duration: 1, fill: '#a8f731', repeat: -1, repeatDelay: 1, transformOrigin: 'center center' });
+  gsap.to('#triangle2', { rotate: 70, duration: 1, fill: '#31f7d9', repeat: -1, repeatDelay: 1, transformOrigin: 'center center' });
+  gsap.to('#triangle3', { rotate: 100, duration: 1, repeat: -1, repeatDelay: 1, transformOrigin: 'center center' });
 
-  gsap.from('#title', { rotate: 30, opacity: 0, duration: 1.5, transformOrigin: 'center center' })
+  gsap.from('#title', { rotate: 30, opacity: 0, duration: 1, repeat: -1, repeatDelay: 1, transformOrigin: 'center center' })
 </script>
 </body>
 </html>
